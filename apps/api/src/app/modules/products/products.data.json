@@ -1,0 +1,62 @@
+[
+  {
+    "id": "3e97b13a-625c-4a6c-9a24-3b0e2b3449c1",
+    "name": "Product Alpha",
+    "price": 150,
+    "description": "This is a unique product"
+  },
+  {
+    "id": "6b9b47de-e3c2-4a4f-b24e-747e1c07d6e5",
+    "name": "Product Beta",
+    "price": 250,
+    "description": "This is another unique product"
+  },
+  {
+    "id": "7c2f8a76-3bd5-4c4b-9c26-67377c4d3b98",
+    "name": "Product Gamma",
+    "price": 350,
+    "description": "This is a different product"
+  },
+  {
+    "id": "9d8b7e4a-3b75-4a46-9f3b-537e17f1a067",
+    "name": "Product Delta",
+    "price": 450,
+    "description": "This is a distinct product"
+  },
+  {
+    "id": "2e4b4f8a-3c5e-4a4d-9f4e-537e17f1a068",
+    "name": "Product Epsilon",
+    "price": 550,
+    "description": "This is a special product"
+  },
+  {
+    "id": "5f6b7c8a-3d6f-4a5e-9f5f-537e17f1a069",
+    "name": "Product Zeta",
+    "price": 650,
+    "description": "This is a unique product"
+  },
+  {
+    "id": "8g9h7i8a-3e7g-4a6f-9g6g-537e17f1a070",
+    "name": "Product Eta",
+    "price": 750,
+    "description": "This is a different product"
+  },
+  {
+    "id": "1j2k3l4a-3f8h-4a7i-9h7i-537e17f1a071",
+    "name": "Product Theta",
+    "price": 850,
+    "description": "This is a distinct product"
+  },
+  {
+    "id": "4m5n6o7a-3g9i-4a8j-9i8j-537e17f1a072",
+    "name": "Product Iota",
+    "price": 950,
+    "description": "This is a special product"
+  },
+  {
+    "id": "7p8q9r0a-3h0j-4a9k-9j9k-537e17f1a073",
+    "name": "Product Kappa",
+    "price": 1050,
+    "description": "This is a unique product"
+  }
+]
