@@ -1,0 +1,25 @@
+:host {
+  @apply flex gap-5;
+
+  .icon {
+    @apply flex justify-center items-center w-12 h-12 rounded-full text-xl text-slate-700 bg-white shadow-xl shadow-slate-100 relative;
+
+    &:before {
+      content: attr(data-quantity);
+
+      @apply absolute flex items-center justify-center w-5 h-5 bg-orange-600 text-center text-white text-xs font-bold rounded-full -top-1 -right-1;
+    }
+  }
+
+  .content {
+    @apply flex flex-col items-start justify-center;
+
+    .title {
+      @apply text-sm font-bold text-slate-700;
+    }
+
+    .subtitle {
+      @apply text-xs text-slate-500;
+    }
+  }
+}

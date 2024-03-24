@@ -5,11 +5,17 @@ import {
   ViewChild,
   ViewContainerRef,
 } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-cart-widget',
   standalone: true,
-  template: `<ng-container #container></ng-container>`,
+  imports: [RouterLink],
+  template: `
+    <a routerLink="kosik">
+      <ng-container #container></ng-container>
+    </a>
+  `,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CartWidgetComponent implements OnInit {

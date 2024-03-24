@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { FooterComponent } from './modules/footer';
@@ -10,10 +10,12 @@ import { HeaderComponent } from './modules/header';
   selector: 'app-root',
   template: `
     <app-header />
-    <section>
+    <section class="content">
       <router-outlet></router-outlet>
     </section>
     <app-footer />
   `,
+  styleUrl: './app.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AppComponent {}

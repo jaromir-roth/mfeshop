@@ -8,7 +8,7 @@
   "files": [
     "src/main.ts",
     "src/app/remote-entry/entry.routes.ts",
-    "src/app/remote-entry/cart-widget.component.ts"
+    "src/app/remote-entry/components/cart-widget.component.ts"
   ],
   "include": ["src/**/*.d.ts"],
   "exclude": ["jest.config.ts", "src/**/*.test.ts", "src/**/*.spec.ts"]
