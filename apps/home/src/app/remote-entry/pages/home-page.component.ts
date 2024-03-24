@@ -1,8 +1,11 @@
 import { Component } from '@angular/core';
 
+import { BannerComponent } from '../components/banner.component';
+
 @Component({
   standalone: true,
   selector: 'app-home-page',
-  template: `<p>HomePage works!</p>`,
+  imports: [BannerComponent],
+  template: `<app-banner />`,
 })
 export class HomePageComponent {}

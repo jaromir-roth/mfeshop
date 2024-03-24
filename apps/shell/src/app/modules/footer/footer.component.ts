@@ -4,7 +4,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   selector: 'app-footer',
   standalone: true,
   template: `<p class="text-center leading-relaxed">
-    Aplikace slouží k demonstrativním účelům v rámci bakalářské práce. <br />
+    Unicorn Vysoká škola s.r.o., obor Softwarový vývoj<br />
     Vypracoval: Jaromír Roth, 2024.
   </p>`,
   styles: [
@@ -14,7 +14,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
         flex-direction: column;
         align-items: center;
 
-        @apply py-6 sm:py-6 text-sm text-slate-500;
+        @apply py-6 sm:py-8 text-sm text-slate-500;
       }
     `,
   ],
