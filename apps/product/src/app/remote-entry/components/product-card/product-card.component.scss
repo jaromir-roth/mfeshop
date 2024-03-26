@@ -1,12 +1,22 @@
 :host {
   @apply flex flex-col gap-3;
 
+  &:hover {
+    .image img {
+      @apply scale-110;
+    }
+  }
+
   a {
     @apply contents cursor-pointer;
   }
 
   .image {
     @apply flex items-center justify-center w-full h-48 bg-slate-100 rounded-lg;
+
+    img {
+      @apply transform transition duration-200;
+    }
   }
 
   h3 {

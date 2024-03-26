@@ -9,7 +9,7 @@ import { FeaturedProductsComponent } from '../components/featured-products/featu
   imports: [BannerComponent, FeaturedProductsComponent],
   template: `
     <app-banner class="mb-8" />
-    <app-featured-products class="mb-8" />
+    <app-featured-products />
   `,
 })
 export class HomePageComponent {}

@@ -10,11 +10,7 @@ export class FeaturedProductsComponent implements OnInit {
   public cartWidgetContainer!: ViewContainerRef;
 
   public async ngOnInit() {
-    const { FeaturedProductsComponent } = await import(
-      'product/FeaturedWidget'
-    );
-    this.cartWidgetContainer
-      .createComponent(FeaturedProductsComponent)
-      .changeDetectorRef.detectChanges();
+    const { FeaturedProductsComponent } = await import('product/FeaturedWidget');
+    this.cartWidgetContainer.createComponent(FeaturedProductsComponent).changeDetectorRef.detectChanges();
   }
 }

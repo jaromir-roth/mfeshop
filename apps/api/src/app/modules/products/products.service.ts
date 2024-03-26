@@ -11,11 +11,7 @@ export class ProductsService {
   }
 
   public async getFeatured(limit: number): Promise<Product[]> {
-    return Promise.resolve(
-      (productsData as Product[])
-        .filter((product) => product.featured)
-        .slice(0, limit)
-    );
+    return Promise.resolve((productsData as Product[]).filter((product) => product.featured).slice(0, limit));
   }
 
   public async getProductById(id: string): Promise<Product> {

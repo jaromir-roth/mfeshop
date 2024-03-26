@@ -8,7 +8,13 @@ import { Product } from '@jaromir-roth/shared';
 export class ProductsService {
   #http = inject(HttpClient);
 
-  public getFeaturedProducts(): Observable<Product[]> {
-    return this.#http.get<Product[]>('products/featured');
+  public getProducts(): Observable<Product[]> {
+    return this.#http.get<Product[]>('products');
+  }
+
+  public getFeaturedProducts(limit: number): Observable<Product[]> {
+    return this.#http.get<Product[]>('products/featured', {
+      params: { limit: limit.toString() },
+    });
   }
 }

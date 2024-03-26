@@ -1,8 +1,4 @@
-import {
-  HttpInterceptorFn,
-  provideHttpClient as provideNgHttpClient,
-  withInterceptors,
-} from '@angular/common/http';
+import { HttpInterceptorFn, provideHttpClient as provideNgHttpClient, withInterceptors } from '@angular/common/http';
 import { EnvironmentProviders, inject } from '@angular/core';
 
 import { BACKEND_URL } from './backend-url.di';

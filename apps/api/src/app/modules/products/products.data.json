@@ -9,24 +9,6 @@
     "featured": false
   },
   {
-    "id": "6b9b47de-e3c2-4a4f-b24e-747e1c07d6e5",
-    "name": "Nástěnné hodiny",
-    "price": 499,
-    "description": "This is another unique product",
-    "imageUrl": "products/clock.svg",
-    "url": "nastenne-hodiny",
-    "featured": true
-  },
-  {
-    "id": "7c2f8a76-3bd5-4c4b-9c26-67377c4d3b98",
-    "name": "Porcelánový hrnek",
-    "price": 350,
-    "description": "This is a different product",
-    "imageUrl": "products/coffee-cup.svg",
-    "url": "procelanovy-hrnek",
-    "featured": false
-  },
-  {
     "id": "9d8b7e4a-3b75-4a46-9f3b-537e17f1a067",
     "name": "Automatický kávovar",
     "price": 13999,
@@ -36,22 +18,13 @@
     "featured": true
   },
   {
-    "id": "2e4b4f8a-3c5e-4a4d-9f4e-537e17f1a068",
-    "name": "Brýle na počítač",
-    "price": 1599,
-    "description": "This is a special product",
-    "imageUrl": "products/glasses.svg",
-    "url": "bryle-na-pocitac",
-    "featured": false
-  },
-  {
     "id": "5f6b7c8a-3d6f-4a5e-9f5f-537e17f1a069",
     "name": "Herní klávesnice",
     "price": 990,
     "description": "This is a unique product",
     "imageUrl": "products/keyboard.svg",
     "url": "herni-klavesnice",
-    "featured": false
+    "featured": true
   },
   {
     "id": "8g9h7i8a-3e7g-4a6f-9g6g-537e17f1a070",
@@ -61,15 +34,6 @@
     "imageUrl": "products/laptop.svg",
     "url": "vykonny-notebook",
     "featured": true
-  },
-  {
-    "id": "1j2k3l4a-3f8h-4a7i-9h7i-537e17f1a071",
-    "name": "Širokoúhlý monitor",
-    "price": 11790,
-    "description": "This is a distinct product",
-    "imageUrl": "products/monitor.svg",
-    "url": "sirokouhly-monitor",
-    "featured": false
   },
   {
     "id": "4m5n6o7a-3g9i-4a8j-9i8j-537e17f1a072",
@@ -105,6 +69,6 @@
     "description": "This is a unique product",
     "imageUrl": "products/watch.svg",
     "url": "chytre-hodinky",
-    "featured": false
+    "featured": true
   }
 ]

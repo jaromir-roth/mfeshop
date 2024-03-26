@@ -11,7 +11,7 @@ import { ProductCardComponent } from '../product-card/product-card.component';
   template: `
     <h2>Doporučené produkty</h2>
     <div class="container">
-      @if (featuredProducts$ | async; as products) { 
+      @if (featuredProducts$ | async; as products) {
         @for (product of products; track product.id) {
           <app-product-card [product]="product" />
         }
@@ -24,6 +24,5 @@ import { ProductCardComponent } from '../product-card/product-card.component';
 export class FeaturedProductsComponent {
   #productsService = inject(ProductsService);
 
-  public readonly featuredProducts$ =
-    this.#productsService.getFeaturedProducts();
+  public readonly featuredProducts$ = this.#productsService.getFeaturedProducts(4);
 }

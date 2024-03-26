@@ -1,10 +1,4 @@
-import {
-  ChangeDetectionStrategy,
-  Component,
-  OnInit,
-  ViewChild,
-  ViewContainerRef,
-} from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit, ViewChild, ViewContainerRef } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -24,8 +18,6 @@ export class CartWidgetComponent implements OnInit {
 
   public async ngOnInit() {
     const { CartWidgetComponent } = await import('cart/Widget');
-    this.cartWidgetContainer
-      .createComponent(CartWidgetComponent)
-      .changeDetectorRef.detectChanges();
+    this.cartWidgetContainer.createComponent(CartWidgetComponent).changeDetectorRef.detectChanges();
   }
 }

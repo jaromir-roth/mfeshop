@@ -8,14 +8,9 @@ import { ButtonComponent, PricePipe, Product } from '@jaromir-roth/shared';
   selector: 'app-product-card',
   standalone: true,
   imports: [RouterLink, NgOptimizedImage, PricePipe, ButtonComponent],
-  template: `<a [routerLink]="['produkty', product.url]">
+  template: `<a [routerLink]="['/produkty', product.url]">
     <div class="image">
-      <img
-        [ngSrc]="product.imageUrl"
-        [alt]="product.name"
-        [width]="64"
-        [height]="64"
-      />
+      <img [ngSrc]="product.imageUrl" [alt]="product.name" [width]="64" [height]="64" />
     </div>
     <h3>{{ product.name }}</h3>
     <div class="info">
