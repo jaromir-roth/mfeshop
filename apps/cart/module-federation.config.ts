@@ -4,7 +4,7 @@ const config: ModuleFederationConfig = {
   name: 'cart',
   exposes: {
     './Routes': 'apps/cart/src/app/remote-entry/entry.routes.ts',
-    './Widget': 'apps/cart/src/app/remote-entry/cart-widget.component.ts',
+    './Widget': 'apps/cart/src/app/remote-entry/components/cart-widget.component.ts',
   },
 };
 
