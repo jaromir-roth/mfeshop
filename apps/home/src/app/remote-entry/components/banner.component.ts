@@ -1,10 +1,11 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { ButtonComponent } from '@jaromir-roth/shared';
 
 @Component({
   selector: 'app-banner',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink, ButtonComponent],
   template: `
     <div class="content">
       <span class="subheading">mfeShop</span>
@@ -15,9 +16,9 @@ import { RouterLink } from '@angular/router';
         architektury.
       </p>
       <a routerLink="/produkty">
-        <button>
+        <app-button class="mt-2">
           Zobrazit produkty <i class="pi pi-arrow-right font-bold ml-2.5"></i>
-        </button>
+        </app-button>
       </a>
     </div>
   `,

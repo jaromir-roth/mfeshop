@@ -13,9 +13,6 @@
     p {
       @apply mb-5;
     }
-    button {
-      @apply px-5 py-3.5 mt-2 relative flex justify-center items-center bg-red-500 uppercase text-xs font-semibold text-white rounded shadow-md tracking-wide hover:bg-red-600 active:bg-red-700;
-    }
   }
 
   &:before {

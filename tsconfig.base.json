@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@jaromir-roth/shared": ["libs/shared/src/index.ts"],
       "cart/Routes": ["apps/cart/src/app/remote-entry/entry.routes.ts"],
       "cart/Widget": [
         "apps/cart/src/app/remote-entry/components/cart-widget.component"
