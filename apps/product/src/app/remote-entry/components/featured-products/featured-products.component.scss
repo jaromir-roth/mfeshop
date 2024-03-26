@@ -1,0 +1,11 @@
+h2 {
+  @apply text-xl font-bold mb-6 leading-tight text-center;
+}
+
+.container {
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6;
+
+  & > *:nth-child(4) {
+    @apply md:hidden lg:flex;
+  }
+}

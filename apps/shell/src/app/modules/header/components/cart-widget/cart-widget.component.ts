@@ -24,6 +24,8 @@ export class CartWidgetComponent implements OnInit {
 
   public async ngOnInit() {
     const { CartWidgetComponent } = await import('cart/Widget');
-    this.cartWidgetContainer.createComponent(CartWidgetComponent);
+    this.cartWidgetContainer
+      .createComponent(CartWidgetComponent)
+      .changeDetectorRef.detectChanges();
   }
 }

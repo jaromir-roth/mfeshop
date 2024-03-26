@@ -2,6 +2,10 @@
   display: inline-flex;
 
   button {
-    @apply px-5 py-3.5 relative flex justify-center items-center bg-red-500 uppercase text-xs font-semibold text-white rounded shadow-md tracking-wide hover:bg-red-600 active:bg-red-700;
+    @apply px-3 py-2 relative flex justify-center items-center bg-red-500 uppercase text-xs font-semibold text-white rounded shadow-md tracking-wide hover:bg-red-600 active:bg-red-700;
+
+    &.medium {
+      @apply px-5 py-3.5;
+    }
   }
 }
