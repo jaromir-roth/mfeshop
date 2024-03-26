@@ -1,6 +1,7 @@
-import { Controller, Get, HttpException, Param } from '@nestjs/common';
+import { Controller, Get, HttpException, Param, Query } from '@nestjs/common';
 
-import { Product } from './products.model';
+import { Product } from '@jaromir-roth/shared';
+
 import { ProductsService } from './products.service';
 
 @Controller('products')
@@ -10,6 +11,11 @@ export class ProductsController {
   @Get()
   public async getAll(): Promise<Product[]> {
     return this.productsService.getProducts();
+  }
+
+  @Get('featured')
+  public async getFeatured(@Query('limit') limit?: number): Promise<Product[]> {
+    return this.productsService.getFeatured(limit);
   }
 
   @Get(':id')
