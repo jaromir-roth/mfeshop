@@ -14,7 +14,7 @@ export class ProductsService {
     return Promise.resolve((productsData as Product[]).filter((product) => product.featured).slice(0, limit));
   }
 
-  public async getProductById(id: string): Promise<Product> {
-    return Promise.resolve(productsData.find((product) => product.id === id));
+  public async getProductByUrl(url: string): Promise<Product> {
+    return Promise.resolve(productsData.find((product) => product.url === url));
   }
 }

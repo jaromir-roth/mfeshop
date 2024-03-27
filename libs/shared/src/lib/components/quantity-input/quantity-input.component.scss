@@ -1,0 +1,34 @@
+:host {
+  @apply contents;
+
+  div.container {
+    @apply flex w-auto bg-white rounded shadow-md shadow-slate-100;
+
+    &.large {
+    }
+
+    button {
+      @apply inline-flex w-8 items-center justify-center text-xl font-semibold border border-gray-200 hover:bg-slate-50 active:bg-slate-100;
+      height: 3.25rem;
+
+      &.decrement {
+        @apply rounded-l;
+      }
+
+      &.increment {
+        @apply rounded-r;
+      }
+    }
+
+    input {
+      @apply w-12 text-center border-t border-b border-gray-200 font-semibold relative;
+      height: 3.25rem;
+
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    }
+  }
+}

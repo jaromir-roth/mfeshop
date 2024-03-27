@@ -1,8 +1,8 @@
 import { AsyncPipe } from '@angular/common';
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 
-import { ProductCardComponent } from '../components/product-card/product-card.component';
-import { ProductsService } from '../services/products.service';
+import { ProductCardComponent } from '../../components/product-card/product-card.component';
+import { ProductsService } from '../../services/products.service';
 
 @Component({
   selector: 'app-product-list-page',

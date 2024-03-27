@@ -18,9 +18,9 @@ export class ProductsController {
     return this.productsService.getFeatured(limit);
   }
 
-  @Get(':id')
-  public async getById(@Param('id') id: string): Promise<Product> {
-    const product = await this.productsService.getProductById(id);
+  @Get(':url')
+  public async getByUrl(@Param('url') id: string): Promise<Product> {
+    const product = await this.productsService.getProductByUrl(id);
     if (!product) {
       throw new HttpException('Product not found', 404);
     }

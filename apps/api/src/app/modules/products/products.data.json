@@ -3,7 +3,7 @@
     "id": "3e97b13a-625c-4a6c-9a24-3b0e2b3449c1",
     "name": "Kancelářská židle",
     "price": 5190,
-    "description": "This is a unique product",
+    "description": "Komfortní kancelářská židle s nastavitelnými funkcemi pro optimální podporu a pohodlí během dlouhé práce.",
     "imageUrl": "products/chair.svg",
     "url": "kancelarska-zidle",
     "featured": false
@@ -12,7 +12,7 @@
     "id": "9d8b7e4a-3b75-4a46-9f3b-537e17f1a067",
     "name": "Automatický kávovar",
     "price": 13999,
-    "description": "This is a distinct product",
+    "description": "Moderní automatický kávovar s intuitivním ovládáním a širokou škálou funkcí pro dokonalý šálek kávy každé ráno.",
     "imageUrl": "products/coffee-maker.svg",
     "url": "automaticky-kavovar",
     "featured": true
@@ -21,7 +21,7 @@
     "id": "5f6b7c8a-3d6f-4a5e-9f5f-537e17f1a069",
     "name": "Herní klávesnice",
     "price": 990,
-    "description": "This is a unique product",
+    "description": "Profesionální herní klávesnice s odolnými tlačítky a podsvícením pro maximální výkon a pohodlí při hraní.",
     "imageUrl": "products/keyboard.svg",
     "url": "herni-klavesnice",
     "featured": true
@@ -30,7 +30,7 @@
     "id": "8g9h7i8a-3e7g-4a6f-9g6g-537e17f1a070",
     "name": "Výkonný notebook",
     "price": 25490,
-    "description": "This is a different product",
+    "description": "Výkonný notebook s vysokým výkonem a špičkovým designem, ideální pro práci i zábavu, kdekoliv a kdykoliv.",
     "imageUrl": "products/laptop.svg",
     "url": "vykonny-notebook",
     "featured": true
@@ -39,7 +39,7 @@
     "id": "4m5n6o7a-3g9i-4a8j-9i8j-537e17f1a072",
     "name": "Ergonomická myš",
     "price": 799,
-    "description": "This is a special product",
+    "description": "Ergonomická myš s přesným snímáním, zvyšuje produktivitu a minimalizuje únavu při dlouhém používání.",
     "imageUrl": "products/mouse.svg",
     "url": "egonomicka-mys",
     "featured": false
@@ -48,7 +48,7 @@
     "id": "7p8q9r0a-3h0j-4a9k-9j9k-537e17f1a073",
     "name": "Laserová tiskárna",
     "price": 3259,
-    "description": "This is a unique product",
+    "description": "Laserová tiskárna s ostrým zobrazením textu a grafiky, ideální pro rychlý a spolehlivý tisk ve firemním prostředí.",
     "imageUrl": "products/printer.svg",
     "url": "laserova-tiskarna",
     "featured": true
@@ -57,7 +57,7 @@
     "id": "4m5n6o7a-3g9i-4a8j-9i8j-537e17f1a072",
     "name": "LCD projektor",
     "price": 19690,
-    "description": "This is a special product",
+    "description": "LCD projektor s jasným obrazem a funkcemi, ideální pro prezentace ve firemním prostředí či domácím kině.",
     "imageUrl": "products/projector.svg",
     "url": "lcd-projektor",
     "featured": false
@@ -66,7 +66,7 @@
     "id": "7p8q9r0a-3h0j-4a9k-9j9k-537e17f1a073",
     "name": "Chytré hodinky",
     "price": 6199,
-    "description": "This is a unique product",
+    "description": "Chytré hodinky s moderním designem a mnoha funkcemi pro sledování aktivity a notifikací, skvělý doplněk.",
     "imageUrl": "products/watch.svg",
     "url": "chytre-hodinky",
     "featured": true

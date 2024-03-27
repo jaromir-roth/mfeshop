@@ -12,6 +12,10 @@ export class ProductsService {
     return this.#http.get<Product[]>('products');
   }
 
+  public getProductByUrl(url: string): Observable<Product> {
+    return this.#http.get<Product>(`products/${url}`);
+  }
+
   public getFeaturedProducts(limit: number): Observable<Product[]> {
     return this.#http.get<Product[]>('products/featured', {
       params: { limit: limit.toString() },
