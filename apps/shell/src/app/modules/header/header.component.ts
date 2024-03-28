@@ -1,14 +1,16 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
+import { NotificationsComponent } from '../notifications';
 import { CartWidgetComponent } from './components/cart-widget/cart-widget.component';
 import { LogoComponent } from './components/logo/logo.component';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [LogoComponent, CartWidgetComponent],
+  imports: [LogoComponent, CartWidgetComponent, NotificationsComponent],
   template: `
     <app-logo />
+    <app-notifications />
     <app-cart-widget />
   `,
   styles: [
