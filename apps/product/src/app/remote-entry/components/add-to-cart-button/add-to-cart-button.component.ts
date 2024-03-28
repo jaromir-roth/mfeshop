@@ -9,8 +9,6 @@ import {
   ViewContainerRef,
 } from '@angular/core';
 
-import type { AddToCartButtonComponent as AddToCartButtonComponentOrigin } from 'cart/AddToCartButton';
-
 @Component({
   selector: 'app-add-to-cart-button',
   standalone: true,
@@ -24,7 +22,7 @@ export class AddToCartButtonComponent implements OnInit, OnChanges {
   @ViewChild('container', { read: ViewContainerRef })
   public cartWidgetContainer!: ViewContainerRef;
 
-  #componentRef: ComponentRef<AddToCartButtonComponentOrigin> | null = null;
+  #componentRef: ComponentRef<any> | null = null;
 
   public async ngOnInit() {
     const { AddToCartButtonComponent } = await import('cart/AddToCartButton');
