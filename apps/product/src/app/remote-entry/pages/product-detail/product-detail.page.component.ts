@@ -3,12 +3,14 @@ import { ChangeDetectionStrategy, Component, inject, Input, OnInit } from '@angu
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
 
-import { ButtonComponent, PricePipe, Product, QuantityInputComponent } from '@jaromir-roth/shared';
+import { PricePipe, Product, QuantityInputComponent } from '@jaromir-roth/shared';
+
+import { AddToCartButtonComponent } from '../../components/add-to-cart-button/add-to-cart-button.component';
 
 @Component({
   selector: 'app-product-detail',
   standalone: true,
-  imports: [FormsModule, NgOptimizedImage, PricePipe, ButtonComponent, QuantityInputComponent],
+  imports: [FormsModule, NgOptimizedImage, PricePipe, QuantityInputComponent, AddToCartButtonComponent],
   template: `
     @if (product) {
       <div class="image">
@@ -26,9 +28,7 @@ import { ButtonComponent, PricePipe, Product, QuantityInputComponent } from '@ja
         </div>
         <div class="add-to-cart">
           <app-quantity-input [(ngModel)]="quantity" [size]="'large'" />
-          <app-button [size]="'large'" (click)="onAddToCart()">
-            Přidat do košíku <i class="pi pi-cart-plus font-medium ml-2.5 text-lg"></i>
-          </app-button>
+          <app-add-to-cart-button [productId]="product.id" [quantity]="quantity" />
         </div>
       </div>
     }
@@ -47,9 +47,5 @@ export class ProductDetailPageComponent implements OnInit {
     if (!this.product) {
       this.#router.navigate(['/produkty']);
     }
-  }
-
-  public onAddToCart() {
-    console.log('Adding product to cart...', { quantity: this.quantity });
   }
 }

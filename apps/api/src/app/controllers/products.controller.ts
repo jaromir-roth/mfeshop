@@ -2,7 +2,7 @@ import { Controller, Get, HttpException, Param, Query } from '@nestjs/common';
 
 import { Product } from '@jaromir-roth/shared';
 
-import { ProductsService } from './products.service';
+import { ProductsService } from '../services/products.service';
 
 @Controller('products')
 export class ProductsController {

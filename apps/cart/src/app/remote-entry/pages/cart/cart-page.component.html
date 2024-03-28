@@ -1,17 +1,21 @@
 <h1>Nákupní košík</h1>
 <div class="container">
-  @if (cart.items.length > 0) {
-    <!-- Cart items -->
-    <app-cart-items [items]="cart.items" />
-    <!-- Divider -->
-    <hr class="divider" />
-    <!-- Total -->
-    <app-cart-total [quantity]="cart.quantity" [total]="cart.total" />
-    <!-- Submit button -->
-    <app-button class="mt-6" [size]="'large'" (click)="submitOrder()">
-      Vytvořit objednávku <i class="pi pi-send font-medium ml-2.5 text-base"></i>
-    </app-button>
+  @if (cart$ | async; as cart) {
+    @if (cart.items.length > 0) {
+      <!-- Cart items -->
+      <app-cart-items [items]="cart.items" />
+      <!-- Divider -->
+      <hr class="divider" />
+      <!-- Total -->
+      <app-cart-total [quantity]="cart.quantity" [total]="cart.total" />
+      <!-- Submit button -->
+      <app-button class="mt-6" [size]="'large'" (click)="submitOrder()">
+        Vytvořit objednávku <i class="pi pi-send font-medium ml-2.5 text-base"></i>
+      </app-button>
+    } @else {
+      <p class="w-full text-center">V košíku nejsou žádné produkty.</p>
+    }
   } @else {
-    <p class="w-full text-center">V košíku nejsou žádné produkty.</p>
+    <p class="w-full text-center">Načítání ...</p>
   }
 </div>

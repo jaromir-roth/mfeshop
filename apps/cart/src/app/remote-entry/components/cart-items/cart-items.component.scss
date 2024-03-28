@@ -1,5 +1,5 @@
 :host {
-  @apply grid grid-cols-6 gap-x-8 gap-y-6;
+  @apply grid grid-cols-6 gap-x-8 gap-y-6 w-full;
   grid-template-columns: auto 1fr auto auto auto auto;
 
   .heading {

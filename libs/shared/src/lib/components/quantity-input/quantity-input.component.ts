@@ -60,7 +60,7 @@ export class QuantityInputComponent implements OnInit, ControlValueAccessor {
   }
 
   public writeValue(value: number): void {
-    this.quantity.setValue(value);
+    this.quantity.setValue(value, { emitEvent: false });
   }
 
   public setDisabledState(isDisabled: boolean): void {

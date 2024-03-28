@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 
 import { Product } from '@jaromir-roth/shared';
 
-import productsData from './products.data.json';
+import productsData from '../data/products.data.json';
 
 @Injectable()
 export class ProductsService {
@@ -12,6 +12,10 @@ export class ProductsService {
 
   public async getFeatured(limit: number): Promise<Product[]> {
     return Promise.resolve((productsData as Product[]).filter((product) => product.featured).slice(0, limit));
+  }
+
+  public async getProductById(id: string): Promise<Product> {
+    return Promise.resolve(productsData.find((product) => product.id === id));
   }
 
   public async getProductByUrl(url: string): Promise<Product> {

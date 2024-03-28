@@ -11,3 +11,5 @@ export interface CartItem {
   quantity: number;
   total: number;
 }
+
+export type CartItemsMap = Record<string, number>;
