@@ -1,0 +1,49 @@
+:host {
+  @apply grid grid-cols-6 gap-x-8 gap-y-6;
+  grid-template-columns: auto 1fr auto auto auto auto;
+
+  .heading {
+    @apply text-sm font-semibold;
+  }
+
+  .image-col {
+    .image {
+      @apply w-16 h-16 flex items-center justify-center bg-slate-100 rounded-md;
+
+      &:hover {
+        img {
+          @apply scale-110;
+        }
+      }
+
+      img {
+        @apply transform transition duration-200;
+      }
+    }
+  }
+
+  .product-col {
+    h2 {
+      @apply font-medium hover:underline hover:underline-offset-2 mb-0.5;
+    }
+
+    .stock {
+      @apply flex flex-col items-start;
+
+      span {
+        @apply text-xs font-semibold text-green-600 leading-snug;
+      }
+      small {
+        @apply text-xs font-normal border-b border-dotted border-slate-400;
+      }
+    }
+  }
+
+  .price-col {
+    @apply text-right text-sm;
+  }
+
+  .total-col {
+    @apply text-right text-sm font-semibold;
+  }
+}

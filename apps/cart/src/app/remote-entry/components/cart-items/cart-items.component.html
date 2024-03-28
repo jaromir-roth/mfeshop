@@ -1,0 +1,45 @@
+<!-- Heading -->
+<div class="heading image-col"></div>
+<div class="heading product-col">Produkt</div>
+<div class="heading quantity-col">Množství</div>
+<div class="heading price-col">Cena</div>
+<div class="heading total-col">Celkem</div>
+<div class="heading remove-col"></div>
+
+<!-- Items -->
+@for (item of items; track item.product.id) {
+  <!-- Image -->
+  <div class="item image-col">
+    <a [routerLink]="['/produkty', item.product.url]" class="image">
+      <img [ngSrc]="item.product.imageUrl" [alt]="item.product.name" [width]="32" [height]="32" />
+    </a>
+  </div>
+  <!-- Product -->
+  <div class="item product-col">
+    <h2>
+      <a [routerLink]="['/produkty', item.product.url]">{{ item.product.name }}</a>
+    </h2>
+    <div class="stock">
+      <span>Skladem</span>
+      <small>připraveno k odeslání</small>
+    </div>
+  </div>
+  <!-- Quantity -->
+  <div class="item quantity-col">
+    <app-quantity-input [ngModel]="item.quantity" (ngModelChange)="changeItemQuantity(item, $event)" />
+  </div>
+  <!-- Price -->
+  <div class="item price-col">
+    {{ item.product.price | price }}
+  </div>
+  <!-- Total -->
+  <div class="item total-col">
+    {{ item.total | price }}
+  </div>
+  <!-- Remove -->
+  <div class="item remove-col">
+    <app-button [size]="'extra-small'" (click)="removeItem(item)">
+      <i class="pi pi-times font-extrabold text-[0.5rem]"></i>
+    </app-button>
+  </div>
+}

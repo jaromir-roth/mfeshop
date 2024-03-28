@@ -1,0 +1,23 @@
+:host {
+  @apply flex flex-col items-end max-w-64 w-full gap-1;
+
+  & > * {
+    @apply flex w-full justify-between items-center;
+
+    small {
+      @apply text-sm text-slate-500;
+    }
+  }
+
+  .quantity {
+    strong {
+      @apply text-base font-semibold;
+    }
+  }
+
+  .price {
+    strong {
+      @apply text-2xl font-bold;
+    }
+  }
+}

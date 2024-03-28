@@ -1,0 +1,15 @@
+:host {
+  @apply flex flex-col items-center;
+
+  h1 {
+    @apply text-2xl font-bold mt-2 mb-8 text-center leading-tight;
+  }
+
+  .container {
+    @apply flex flex-col max-w-xl items-end;
+
+    .divider {
+      @apply w-full mt-8 mb-6 border-t-2 border-slate-200;
+    }
+  }
+}

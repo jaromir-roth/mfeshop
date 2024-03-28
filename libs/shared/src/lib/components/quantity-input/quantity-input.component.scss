@@ -4,12 +4,8 @@
   div.container {
     @apply flex w-auto bg-white rounded shadow-md shadow-slate-100;
 
-    &.large {
-    }
-
     button {
-      @apply inline-flex w-8 items-center justify-center text-xl font-semibold border border-gray-200 hover:bg-slate-50 active:bg-slate-100;
-      height: 3.25rem;
+      @apply inline-flex items-center justify-center font-semibold border border-gray-200 hover:bg-slate-50 active:bg-slate-100;
 
       &.decrement {
         @apply rounded-l;
@@ -21,13 +17,32 @@
     }
 
     input {
-      @apply w-12 text-center border-t border-b border-gray-200 font-semibold relative;
-      height: 3.25rem;
+      @apply relative text-center border-t border-b border-gray-200 font-semibold;
 
       &::-webkit-outer-spin-button,
       &::-webkit-inner-spin-button {
         -webkit-appearance: none;
         margin: 0;
+      }
+    }
+
+    &.small {
+      button {
+        @apply w-6 h-9;
+      }
+
+      input {
+        @apply w-9 h-9 text-sm;
+      }
+    }
+
+    &.large {
+      button {
+        @apply w-8 h-[3.25rem] text-xl;
+      }
+
+      input {
+        @apply w-12 h-[3.25rem];
       }
     }
   }

@@ -17,7 +17,7 @@
     "paths": {
       "@jaromir-roth/shared": ["libs/shared/src/index.ts"],
       "cart/Routes": ["apps/cart/src/app/remote-entry/entry.routes.ts"],
-      "cart/Widget": ["apps/cart/src/app/remote-entry/components/cart-widget.component.ts"],
+      "cart/Widget": ["apps/cart/src/app/remote-entry/components/cart-widget/cart-widget.component.ts"],
       "home/Routes": ["apps/home/src/app/remote-entry/entry.routes.ts"],
       "product/Routes": ["apps/product/src/app/remote-entry/entry.routes.ts"],
       "product/FeaturedWidget": [
