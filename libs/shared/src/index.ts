@@ -6,4 +6,5 @@ export * from './lib/models/notification.model';
 export * from './lib/di/backend-url.di';
 export * from './lib/di/http-client.di';
 export * from './lib/di/image-loader.di';
+export * from './lib/di/title.di';
 export * from './lib/pipes/price.pipe';
