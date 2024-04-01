@@ -1,0 +1,36 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - '*'
+      - '!main'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: ./
+
+    steps:
+      - name: Download sources
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Derive appropriate SHAs for base and head for `nx affected` commands
+        uses: nrwl/nx-set-shas@v2
+
+      - name: Install environment
+        uses: actions/setup-node@master
+
+      - name: Install project dependencies
+        run: npm install
+
+      - name: Build applications
+        run: npx nx affected --target=build --parallel --max-parallel=3
+
+      - name: Run tests
+        run: npx nx affected --target=test --parallel --max-parallel=2
