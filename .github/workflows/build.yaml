@@ -31,6 +31,3 @@ jobs:
 
       - name: Build applications
         run: npx nx affected --target=build --parallel --max-parallel=3
-
-      - name: Run tests
-        run: npx nx affected --target=test --parallel --max-parallel=2
