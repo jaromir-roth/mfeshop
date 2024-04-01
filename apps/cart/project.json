@@ -16,7 +16,7 @@
         "polyfills": ["zone.js"],
         "tsConfig": "apps/cart/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
-        "assets": ["apps/cart/src/favicon.ico", "apps/cart/src/assets"],
+        "assets": ["apps/cart/src/favicon.ico", "apps/cart/src/assets", "apps/cart/src/netlify.toml"],
         "styles": ["apps/cart/src/styles.scss"],
         "scripts": [],
         "customWebpackConfig": {
@@ -106,6 +106,13 @@
         "production": {
           "buildTarget": "cart:build:production"
         }
+      }
+    },
+    "deploy": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npx netlify deploy --dir=dist/apps/cart --prod --filter=cart",
+        "args": ["--site=da8d9627-4da3-49a7-89ba-e15473d11b9f"]
       }
     }
   }
