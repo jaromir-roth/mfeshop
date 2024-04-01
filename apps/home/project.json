@@ -16,7 +16,15 @@
         "polyfills": ["zone.js"],
         "tsConfig": "apps/home/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
-        "assets": ["apps/home/src/favicon.ico", "apps/home/src/assets", "apps/home/src/netlify.toml"],
+        "assets": [
+          "apps/home/src/favicon.ico",
+          "apps/home/src/assets",
+          {
+            "glob": "*",
+            "input": "apps/home/src/.netlify",
+            "output": "/"
+          }
+        ],
         "styles": ["apps/home/src/styles.scss"],
         "scripts": [],
         "customWebpackConfig": {
