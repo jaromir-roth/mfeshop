@@ -2,7 +2,10 @@
   "name": "@jaromir-roth/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "api:build:prod": "nx run api:build:prod",
+    "api:start:prod": "node dist/apps/api/main"
+  },
   "private": true,
   "devDependencies": {
     "@angular-devkit/build-angular": "~17.2.0",
@@ -59,14 +62,17 @@
     "@angular/platform-browser": "~17.2.0",
     "@angular/platform-browser-dynamic": "~17.2.0",
     "@angular/router": "~17.2.0",
+    "@codegenie/serverless-express": "^4.14.0",
     "@nestjs/common": "^10.0.2",
     "@nestjs/core": "^10.0.2",
     "@nestjs/platform-express": "^10.0.2",
     "@nestjs/serve-static": "^4.0.1",
+    "aws-lambda": "^1.0.7",
     "axios": "^1.6.0",
     "primeicons": "^6.0.1",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.0",
+    "serverless-http": "^2.7.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"
   }
