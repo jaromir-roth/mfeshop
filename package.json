@@ -3,7 +3,10 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "start": "run-p api:start:dev mfe:start:dev",
+    "mfe:start:dev": "nx serve shell --devRemotes=home,product,cart",
     "api:build:prod": "nx run api:build:prod",
+    "api:start:dev": "nx serve api",
     "api:start:prod": "node dist/apps/api/main"
   },
   "private": true,
@@ -44,6 +47,7 @@
     "jest-environment-jsdom": "^29.4.1",
     "jest-environment-node": "^29.4.1",
     "jest-preset-angular": "~14.0.3",
+    "npm-run-all": "^4.1.5",
     "nx": "18.1.2",
     "postcss": "^8.4.5",
     "prettier": "^3.2.5",
